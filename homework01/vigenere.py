@@ -32,6 +32,7 @@ def encrypt_vigenere(plaintext: str, keyword: str) -> str:
             j += 1
         else:
             ciphertext += i
+             j += 1
     return ciphertext
 
 def decrypt_vigenere(ciphertext: str, keyword: str) -> str:
@@ -64,4 +65,5 @@ def decrypt_vigenere(ciphertext: str, keyword: str) -> str:
             j += 1
         else:
             plaintext += i
+             j += 1
     return plaintext
